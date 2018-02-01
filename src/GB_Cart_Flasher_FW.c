@@ -1670,15 +1670,15 @@ int main(void)
 
 	if ((PINE & (1u << DDE0 | 1u << DDE2)) == 0x01u) {
 
-		UBRRL = 0x02;
+		UBRRL = 0x05;
 
 	} else if ((PINE & (1u << DDE0 | 1u << DDE2)) == 0x04u) {
 
-		UBRRL = 0x00;
+		UBRRL = 0x01;
 
 	} else {
 
-		UBRRL = 0x01;
+		UBRRL = 0x03;
 
 	}
 
